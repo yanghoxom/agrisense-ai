@@ -90,20 +90,18 @@
 </head>
 <body class="bg-surface font-body text-on-surface">
 <!-- TopNavBar -->
-<nav class="w-full sticky top-0 z-50 bg-[#faf9fd] dark:bg-gray-950 shadow-sm dark:shadow-none">
+<nav class="w-full sticky top-0 z-50 bg-[#faf9fd] dark:bg-gray-950 border-b border-[#bdcaba]/20 shadow-sm dark:shadow-none">
 <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="flex items-center gap-2">
-<a class="text-2xl font-bold text-[#006e2c] dark:text-[#34a853] no-underline" href="index.html">AgriSense AI</a>
-</div>
-<div class="hidden md:flex items-center gap-8 font-['Lexend'] text-sm font-medium tracking-tight">
-<a class="text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors" href="index.html">Vision</a>
-<a class="text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors" href="technology.html">Technology</a>
-<a class="text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors" href="market.html">Market</a>
-<a class="text-[#006e2c] dark:text-[#34a853] font-semibold border-b-2 border-[#006e2c] pb-1" href="team.html">Team</a>
+<a class="text-2xl font-bold text-[#006e2c] dark:text-[#34a853] font-['Lexend'] tracking-tight no-underline" href="index.html">AgriSense AI</a>
+<div class="hidden md:flex gap-8 items-center font-['Lexend'] text-sm font-medium tracking-tight">
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="index.html">Vision</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="technology.html">Technology</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="market.html">Market</a>
+<a class="text-[#006e2c] dark:text-[#34a853] font-semibold border-b-2 border-[#006e2c] dark:border-[#34a853] pb-1" href="team.html">Team</a>
 </div>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined cursor-pointer text-gray-600 hover:bg-gray-100/50 p-2 rounded-full transition-all">language</span>
-<button class="bg-gradient-to-br from-[#006e2c] to-[#34a853] text-on-primary px-6 py-2 rounded-xl font-medium cursor-pointer active:scale-95 transition-transform">Invest Now</button>
+<span class="material-symbols-outlined text-gray-500 cursor-pointer p-2 hover:bg-gray-100/50 rounded-full transition-all">language</span>
+<button class="bg-[#006e2c] text-white px-6 py-2.5 rounded-xl font-['Lexend'] font-semibold hover:bg-[#34a853] active:scale-95 transition-all shadow-md">Invest Now</button>
 </div>
 </div>
 </nav>
@@ -160,51 +158,62 @@
 </div>
 </div>
 </section>
-<!-- Advisory Board: Bento Grid Layout -->
+<!-- AI Industry Visionaries -->
 <section class="mb-32">
-<div class="flex items-center gap-4 mb-12">
+<div class="flex items-center gap-4 mb-4">
 <div class="h-[2px] w-12 bg-tertiary"></div>
-<h2 class="text-3xl font-bold uppercase tracking-widest text-on-surface">Advisory Board</h2>
+<h2 class="text-3xl font-bold uppercase tracking-widest text-on-surface">AI Industry Visionaries</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
-<div class="md:col-span-8 bg-surface-container-low rounded-3xl p-10 flex flex-col justify-between relative overflow-hidden group">
+<p class="text-on-surface-variant mb-12 max-w-2xl">The research and vision of these global AI leaders directly inspire the technology at the core of AgriSense AI — from multimodal perception to responsible deployment at scale.</p>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Andrew Ng — large feature card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-3xl p-10 flex flex-col justify-between relative overflow-hidden group min-h-[320px]">
 <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-<div>
-<span class="inline-block bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter mb-4">SDG Impact Lead</span>
-<h3 class="text-4xl font-bold text-on-surface mb-4">Prof. Siti Aminah</h3>
-<p class="text-lg text-on-surface-variant max-w-md">Leading expert in Climate Resilient Agriculture and advisor to the UN on SDG 2: Zero Hunger. Shaping our impact roadmap for local farmers.</p>
+<div class="z-10">
+<span class="inline-block bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter mb-4">AI Education & Research</span>
+<h3 class="text-4xl font-bold text-on-surface mb-4">Andrew Ng</h3>
+<p class="text-lg text-on-surface-variant max-w-md">Co-Founder of Google Brain and Coursera. Founder of DeepLearning.AI and the AI Fund. Adjunct Professor at Stanford University. His work on large-scale deep learning forms the scientific backbone of our crop intelligence models.</p>
 </div>
-<div class="flex items-center gap-4">
+<div class="flex items-center gap-4 mt-8 z-10">
 <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-primary">eco</span>
+<span class="material-symbols-outlined text-primary">school</span>
 </div>
-<span class="text-sm font-semibold text-primary">Expert in SEA Agriculture Policy</span>
+<span class="text-sm font-semibold text-primary">Co-Founder, Google Brain · Founder, DeepLearning.AI</span>
 </div>
 </div>
-<div class="md:col-span-4 bg-tertiary-fixed rounded-3xl p-10 flex flex-col items-center text-center justify-center group">
-<div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-white shadow-xl">
-<img alt="Advisor" class="w-full h-full object-cover" data-alt="Distinguished senior advisor portrait, clean studio lighting, intelligent and experienced look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOWsVuCKRQ43pQe0Di2z9-AJWQ4LsAqRNJ4XKefDaWhTZwdBvFa935fd2JI9XNQAgc_vM1-eXng-ivbbPJCGo9HC4Y382ri7l9qyuqYLPQPKV7gRER3fNAfCM_-QmdLBrrEwWCH_SXdFH1h9qSLl2WsLJkq8zJRW1Cq3SD6VfRRELsTajW5rh-KXcXrsWbgHhGhuA8B0ndpaclg7CCsxcDDrNmFCoJB_G0saWLDUn2QHxR_jCH74hFhfGFYRLNP7_tzogIBfDyM07E"/>
+<!-- Jeff Dean — photo card -->
+<div class="md:col-span-4 bg-[#e8f5e9] rounded-3xl p-8 flex flex-col items-center text-center justify-center group">
+<div class="w-28 h-28 rounded-full overflow-hidden mb-5 border-4 border-white shadow-xl">
+<img alt="Jeff Dean" class="w-full h-full object-cover object-top" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Jeff_Dean_2018_crop.jpg"/>
 </div>
-<h3 class="text-2xl font-bold text-on-tertiary-fixed mb-2">Tan Sri David Lim</h3>
-<p class="text-on-tertiary-fixed-variant mb-6">Former Chairman of Regional Agri-Banks. Strategic Financial Advisor.</p>
-<div class="w-full h-[1px] bg-on-tertiary-fixed/10 mb-6"></div>
-<span class="text-xs font-bold text-tertiary uppercase tracking-widest">Finance &amp; Scale Specialist</span>
+<h3 class="text-xl font-bold text-[#1b5e20] mb-1">Jeff Dean</h3>
+<p class="text-[#2e7d32] text-sm mb-4 leading-snug">Chief Scientist, Google DeepMind & Google Research</p>
+<div class="w-full h-[1px] bg-[#1b5e20]/10 mb-4"></div>
+<span class="text-xs font-bold text-[#388e3c] uppercase tracking-widest">Multimodal AI Architecture</span>
 </div>
-<div class="md:col-span-4 bg-secondary-container rounded-3xl p-8 flex flex-col justify-center">
-<h3 class="text-xl font-bold text-on-secondary-container mb-2">Dr. Elena Rossi</h3>
-<p class="text-on-secondary-container opacity-80">Director of the Global Soil Health Institute. Technical advisor for sensor calibration.</p>
+<!-- Fei-Fei Li — photo card -->
+<div class="md:col-span-4 bg-[#f1f8e9] rounded-3xl p-8 flex flex-col items-center text-center justify-center group">
+<div class="w-28 h-28 rounded-full overflow-hidden mb-5 border-4 border-white shadow-xl">
+<img alt="Fei-Fei Li" class="w-full h-full object-cover object-top" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Fei-Fei_Li_at_AI_for_Good_2017_%28cropped%29.jpg"/>
 </div>
-<div class="md:col-span-8 bg-surface-container-highest rounded-3xl p-8 flex items-center justify-between overflow-hidden">
+<h3 class="text-xl font-bold text-[#1b5e20] mb-1">Fei-Fei Li</h3>
+<p class="text-[#2e7d32] text-sm mb-4 leading-snug">Co-Director, Stanford HAI · Former Chief Scientist, Google Cloud AI</p>
+<div class="w-full h-[1px] bg-[#1b5e20]/10 mb-4"></div>
+<span class="text-xs font-bold text-[#388e3c] uppercase tracking-widest">Computer Vision & AI for Good</span>
+</div>
+<!-- Demis Hassabis — large feature card -->
+<div class="md:col-span-8 bg-surface-container-highest rounded-3xl p-8 flex items-center justify-between overflow-hidden min-h-[200px]">
 <div class="max-w-md">
-<h3 class="text-2xl font-bold text-on-surface mb-2">Agri-Data Consortium</h3>
-<p class="text-on-surface-variant">We partner with global institutions to ensure our AI models are trained on the most diverse datasets in the world.</p>
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter mb-4">Foundation Models</span>
+<h3 class="text-2xl font-bold text-on-surface mb-2">Demis Hassabis</h3>
+<p class="text-on-surface-variant">CEO & Co-Founder of Google DeepMind. Nobel Prize in Chemistry 2024. Creator of AlphaFold — the breakthrough that proved AI can solve life science problems at a fundamental level. Gemini, the model powering AgriSense AI, is his team's creation.</p>
 </div>
-<div class="hidden lg:flex gap-2">
-<div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-primary">analytics</span>
+<div class="hidden lg:flex flex-col gap-2 ml-6 flex-shrink-0">
+<div class="w-14 h-14 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl">biotech</span>
 </div>
-<div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-tertiary">database</span>
+<div class="w-14 h-14 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-2xl">emoji_events</span>
 </div>
 </div>
 </div>
@@ -230,16 +239,27 @@
 </main>
 <!-- Footer -->
 <footer class="w-full py-12 px-8 bg-[#f4f3f7] dark:bg-gray-900 border-t border-[#bdcaba]/20">
-<div class="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto w-full gap-8">
-<div class="space-y-4">
-<span class="text-xl font-bold text-[#006e2c]">AgriSense AI</span>
-<p class="font-['Lexend'] text-body-md text-gray-600 dark:text-gray-400">© 2024 AgriSense AI. Precision through data, warmth through texture.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
+<div>
+<a href="index.html" class="text-xl font-bold text-[#006e2c] dark:text-[#34a853] font-['Lexend'] no-underline block mb-2">AgriSense AI</a>
+<p class="font-['Lexend'] text-sm text-gray-500 dark:text-gray-400 max-w-xs leading-relaxed">© 2026 AgriSense AI.<br/>Harvesting Intelligence for a Greener Planet.</p>
 </div>
-<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-2">
-<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Privacy Policy</a>
-<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Terms of Service</a>
-<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Investor Relations</a>
-<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Contact Us</a>
+<div class="flex flex-col gap-3 font-['Lexend'] text-sm">
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Investor Relations</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Contact Us</a>
+</div>
+<div class="md:text-right">
+<p class="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4 font-['Lexend']">Follow the journey</p>
+<div class="flex md:justify-end gap-3">
+<a href="#" class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-[#bdcaba]/30 flex items-center justify-center opacity-80 hover:opacity-100 hover:border-[#006e2c] transition-all shadow-sm">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#006e2c]" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-[#bdcaba]/30 flex items-center justify-center opacity-80 hover:opacity-100 hover:border-[#006e2c] transition-all shadow-sm">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#006e2c]" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+</div>
 </div>
 </div>
 </footer>
