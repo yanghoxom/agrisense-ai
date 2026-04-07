@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriSense AI - Technology</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbd9dd",
+                        "on-secondary-fixed": "#2e150b",
+                        "secondary-fixed": "#ffdbcf",
+                        "inverse-on-surface": "#f1f0f4",
+                        "surface-container-low": "#f4f3f7",
+                        "surface-tint": "#006e2c",
+                        "tertiary-fixed-dim": "#ffba45",
+                        "surface": "#faf9fd",
+                        "primary-container": "#34a853",
+                        "on-surface": "#1a1b1e",
+                        "on-secondary-fixed-variant": "#603f33",
+                        "inverse-surface": "#2f3033",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#c68700",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e3e2e6",
+                        "secondary-container": "#fdcdbc",
+                        "outline-variant": "#bdcaba",
+                        "on-tertiary-fixed": "#281800",
+                        "on-background": "#1a1b1e",
+                        "on-secondary-container": "#795548",
+                        "on-tertiary-fixed-variant": "#614000",
+                        "surface-bright": "#faf9fd",
+                        "tertiary-fixed": "#ffddb0",
+                        "tertiary": "#805600",
+                        "on-primary-fixed-variant": "#005320",
+                        "surface-variant": "#e3e2e6",
+                        "inverse-primary": "#6ddd81",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#006e2c",
+                        "surface-container-high": "#e9e7eb",
+                        "surface-container": "#efedf1",
+                        "secondary-fixed-dim": "#ebbcac",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "background": "#faf9fd",
+                        "on-tertiary-container": "#3e2800",
+                        "on-surface-variant": "#3e4a3e",
+                        "on-primary-container": "#003511",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#6ddd81",
+                        "outline": "#6e7a6d",
+                        "secondary": "#7a5649",
+                        "primary-fixed": "#89fa9b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#002108"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Lexend"],
+                        "label": ["Lexend"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-[#faf9fd] dark:bg-gray-950 shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold text-[#006e2c] dark:text-[#34a853] font-['Lexend'] tracking-tight no-underline" href="index.html">
+                AgriSense AI
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Lexend'] text-sm font-medium tracking-tight text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors cursor-pointer active:scale-95 transition-transform" href="index.html">Vision</a>
+<a class="font-['Lexend'] text-sm font-medium tracking-tight text-[#006e2c] dark:text-[#34a853] font-semibold border-b-2 border-[#006e2c] pb-1 cursor-pointer active:scale-95 transition-transform" href="technology.html">Technology</a>
+<a class="font-['Lexend'] text-sm font-medium tracking-tight text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors cursor-pointer active:scale-95 transition-transform" href="market.html">Market</a>
+<a class="font-['Lexend'] text-sm font-medium tracking-tight text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors cursor-pointer active:scale-95 transition-transform" href="team.html">Team</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-600 cursor-pointer p-2 hover:bg-gray-100/50 rounded-full">language</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-xl font-medium transition-all active:scale-95">
+                    Invest Now
+                </button>
+</div>
+</nav>
+</header>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative px-8 py-24 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider uppercase text-primary bg-primary-container/10 rounded-full">The Modern Earth Editorial</span>
+<h1 class="text-display-lg md:text-7xl font-extrabold text-on-surface leading-tight mb-8">
+                        Precision <span class="text-primary italic">Intelligence</span> for the Soil.
+                    </h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        AgriSense AI combines multimodal data processing with real-world grounding to provide farmers with actionable insights that were previously invisible.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2">
+                            Explore the Engine
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl"></div>
+<div class="rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 aspect-square">
+<img alt="Advanced Agricultural AI" class="w-full h-full object-cover" data-alt="Macro view of a futuristic farm drone hovering over vibrant green wheat fields with holographic data overlays under a clear blue morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATU9QkcbjRAfnAUs2QQJD7q-9iSvTeijpElzmecmquZ22_Aut_7HF2TT-bn3wmEcLwsQIqQcKTPY5R2i4OHy-sISHm-bd7MxnVSChEPjcicu-krahX3-PQymdCNmrOYiPMfd_eq32e0tv59i0NzMPK34JiKsjpM2bB9z0W2fQ9FMgGMFqQ6ZMHsF3AdN9l4kbAViHwbSICC76QH4VOjz0NyvjVpV2fmp8HFlwzu4W_Lev3vZhliuKjYIlHzktFmJNl4V5xpKf0Ywa1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 glass-card p-6 rounded-2xl">
+<div class="flex items-center gap-4">
+<div class="bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-weight="fill">sensors</span>
+</div>
+<div>
+<div class="text-sm font-bold text-primary">Live Connection</div>
+<div class="text-xs text-on-surface-variant">Real-time soil analysis active</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 1. Proprietary AI Engine: Bento Grid -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-4xl md:text-5xl font-bold mb-4">Proprietary AI Engine</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Our tri-modal processing architecture enables a holistic understanding of farm operations across visual, auditory, and textual dimensions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Visual Processing -->
+<div class="md:col-span-8 bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col justify-between group hover:shadow-xl transition-all border border-outline-variant/10">
+<div>
+<div class="w-16 h-16 bg-primary-container/20 text-primary rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">visibility</span>
+</div>
+<h3 class="text-3xl font-bold mb-4">Neural Vision</h3>
+<p class="text-body-lg text-on-surface-variant max-w-lg">Advanced computer vision detects pest infestations and nutrient deficiencies before they are visible to the human eye, analyzing leaf patterns and soil color shifts in real-time.</p>
+</div>
+<div class="mt-12 flex gap-4">
+<div class="px-4 py-2 bg-surface-container rounded-lg text-xs font-bold uppercase tracking-widest text-on-surface-variant">Spectral Analysis</div>
+<div class="px-4 py-2 bg-surface-container rounded-lg text-xs font-bold uppercase tracking-widest text-on-surface-variant">Pattern Recognition</div>
+</div>
+</div>
+<!-- Voice Processing -->
+<div class="md:col-span-4 bg-primary text-on-primary p-10 rounded-[2rem] flex flex-col justify-between shadow-lg shadow-primary/20">
+<div>
+<div class="w-16 h-16 bg-on-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl">mic</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Natural Language Voice</h3>
+<p class="text-on-primary/80">Hands-free field commands. Farmers can report observations or query data using natural dialect, processed even in high-noise environments.</p>
+</div>
+<div class="mt-8 border-t border-on-primary/20 pt-6">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></div>
+<span class="text-xs font-medium uppercase">Engine Listening...</span>
+</div>
+</div>
+</div>
+<!-- Textual Processing -->
+<div class="md:col-span-4 bg-tertiary-fixed p-10 rounded-[2rem] flex flex-col border border-outline-variant/10">
+<div class="w-14 h-14 bg-on-tertiary-fixed/10 text-on-tertiary-fixed rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">description</span>
+</div>
+<h3 class="text-2xl font-bold text-on-tertiary-fixed mb-4">Textual Synthesis</h3>
+<p class="text-on-tertiary-fixed-variant">Ingests regional policy updates, weather reports, and supply chain logistics to contextualize local data within global trends.</p>
+</div>
+<!-- Integrated Insights -->
+<div class="md:col-span-8 bg-surface-container-highest p-10 rounded-[2rem] flex flex-col md:flex-row gap-10 items-center border border-outline-variant/10">
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-4">The Unified Intelligence Hub</h3>
+<p class="text-on-surface-variant">All inputs converge into a single decision engine, providing a 360-degree view of your ecosystem. No more siloed data; only clarity.</p>
+</div>
+<div class="w-48 h-48 bg-surface-container-lowest rounded-full flex items-center justify-center border-8 border-primary/10 relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-tertiary opacity-10 rounded-full"></div>
+<span class="material-symbols-outlined text-6xl text-primary" data-weight="fill">hub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Real-World Grounding -->
+<section class="py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="flex-1 order-2 lg:order-1 relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary mb-2">database</span>
+<div class="font-bold text-on-surface">Agri-Databases</div>
+<div class="text-sm text-on-surface-variant">Linked to global seed &amp; soil banks</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/20 translate-x-4">
+<span class="material-symbols-outlined text-secondary mb-2">trending_up</span>
+<div class="font-bold text-on-surface">Market Data</div>
+<div class="text-sm text-on-surface-variant">Real-time commodity futures tracking</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-tertiary mb-2">thermostat</span>
+<div class="font-bold text-on-surface">Hyper-Local Weather</div>
+<div class="text-sm text-on-surface-variant">Micro-climate forecasting at field level</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/20 translate-x-4">
+<span class="material-symbols-outlined text-primary mb-2">satellite_alt</span>
+<div class="font-bold text-on-surface">Satellite Grounding</div>
+<div class="text-sm text-on-surface-variant">Multi-spectral satellite verification</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 order-1 lg:order-2">
+<h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Grounded in Reality, Not Hallucinations.</h2>
+<p class="text-body-lg text-on-surface-variant mb-10">Unlike generic AI models, AgriSense is "grounded" in verified agricultural facts. Every recommendation is cross-referenced against scientific databases and live market signals to ensure accuracy and profitability.</p>
+<ul class="space-y-6">
+<li class="flex gap-4 items-start">
+<div class="bg-primary text-on-primary p-1 rounded-full mt-1">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div>
+<span class="font-bold block">Scientific Verification</span>
+<span class="text-on-surface-variant">Recommendations aligned with FAO and regional ag-science standards.</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="bg-primary text-on-primary p-1 rounded-full mt-1">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div>
+<span class="font-bold block">Economic Viability</span>
+<span class="text-on-surface-variant">Cost-benefit analysis included with every operational suggestion.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Data Privacy & Ethics -->
+<section class="bg-[#2f3033] text-[#ffffff] py-24 px-8 relative overflow-hidden">
+<!-- Asymmetric Tech Background Element -->
+<div class="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl md:text-5xl font-bold mb-8">Data Sovereignty &amp; Secure Infrastructure</h2>
+<p class="text-lg opacity-80 mb-12">Your data is your legacy. We utilize state-of-the-art secure cloud infrastructure designed specifically to protect farmer information while providing lightning-fast AI inferencing.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-4xl text-primary-fixed">lock</span>
+<div>
+<div class="text-lg font-bold">End-to-End Encryption</div>
+<div class="opacity-60 text-sm">Your field data is encrypted at rest and in transit.</div>
+</div>
+</div>
+<div class="flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-4xl text-primary-fixed">shield_person</span>
+<div>
+<div class="text-lg font-bold">Ethical Data Usage</div>
+<div class="opacity-60 text-sm">We never sell your data to third-party insurers or competitors.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative bg-surface-container-highest/10 p-1 rounded-[3rem]">
+<img alt="Secure Cloud Infrastructure" class="rounded-[2.8rem] w-full h-96 object-cover grayscale brightness-50" data-alt="Abstract visualization of high-tech server racks in a dark data center with glowing green fiber optic lights representing secure data transfer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEh8xVIlEH9sFVJiFOkKEEHTn4brUXyKRyUFUUIcH_vbJcLkKBma26henSikoeG2UIwHgYeQqWgpZLna9HgYblM_eOAhZQO6XcOK74BMlqXWS9RYsYtXZ_MN9SXfoh_OLTEOvp5LrgynedBo9CqxAxPz_n8STzNf2hDGjlJmFPpI9VisNJY6N_AKoO99r0IhA05CfhPR0A11olieSnBAf2Ik0TyRfN6MDpaWFziHHawRPHYQ0CqomlUWL67Jog3JwYJwNqfHMCJpCk"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center glass-card p-8 rounded-3xl border border-white/20">
+<div class="text-5xl font-bold text-primary mb-2">99.9%</div>
+<div class="text-xs font-bold uppercase tracking-widest text-on-surface">Uptime Guaranteed</div>
+<div class="mt-4 text-on-surface-variant text-sm">Secure Cloud Nodes across 12 Regions</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8 text-center max-w-4xl mx-auto">
+<h2 class="text-display-md font-bold mb-6">Ready to see the difference?</h2>
+<p class="text-body-lg text-on-surface-variant mb-10">Our technology is built for the rugged reality of farming, not just the laboratory.</p>
+<div class="flex justify-center gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition-transform">Get a Demo</button>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-2xl font-bold text-xl">Technical Whitepaper</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#f4f3f7] dark:bg-gray-900 border-t border-[#bdcaba]/20">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto w-full gap-8">
+<div class="space-y-4">
+<div class="text-xl font-bold text-[#006e2c] font-['Lexend']">AgriSense AI</div>
+<p class="font-['Lexend'] text-body-md text-gray-600 dark:text-gray-400 max-w-sm">
+                    © 2024 AgriSense AI. Precision through data, warmth through texture.
+                </p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+<a class="font-['Lexend'] text-body-md text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-['Lexend'] text-body-md text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Terms of Service</a>
+<a class="font-['Lexend'] text-body-md text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Investor Relations</a>
+<a class="font-['Lexend'] text-body-md text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

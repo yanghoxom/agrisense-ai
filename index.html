@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriSense AI - The Agricultural Physician for 120 Million Farmers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f3f7",
+                        "on-secondary-fixed-variant": "#603f33",
+                        "surface-container-highest": "#e3e2e6",
+                        "surface-dim": "#dbd9dd",
+                        "surface": "#faf9fd",
+                        "tertiary": "#805600",
+                        "on-surface-variant": "#3e4a3e",
+                        "tertiary-fixed": "#ffddb0",
+                        "on-primary-fixed": "#002108",
+                        "outline-variant": "#bdcaba",
+                        "on-surface": "#1a1b1e",
+                        "tertiary-fixed-dim": "#ffba45",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f0f4",
+                        "surface-tint": "#006e2c",
+                        "on-primary-fixed-variant": "#005320",
+                        "on-tertiary-fixed": "#281800",
+                        "outline": "#6e7a6d",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3033",
+                        "secondary-container": "#fdcdbc",
+                        "on-secondary-container": "#795548",
+                        "secondary-fixed": "#ffdbcf",
+                        "primary-container": "#34a853",
+                        "on-background": "#1a1b1e",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#6ddd81",
+                        "primary-fixed": "#89fa9b",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container": "#efedf1",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#faf9fd",
+                        "surface-variant": "#e3e2e6",
+                        "surface-bright": "#faf9fd",
+                        "on-tertiary-container": "#3e2800",
+                        "on-tertiary-fixed-variant": "#614000",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#003511",
+                        "tertiary-container": "#c68700",
+                        "on-secondary-fixed": "#2e150b",
+                        "inverse-primary": "#6ddd81",
+                        "primary": "#006e2c",
+                        "surface-container-high": "#e9e7eb",
+                        "secondary-fixed-dim": "#ebbcac",
+                        "secondary": "#7a5649"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Lexend"],
+                        "body": ["Lexend"],
+                        "label": ["Lexend"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold text-green-800 dark:text-green-400 font-lexend tracking-tight no-underline" href="index.html">
+            AgriSense AI
+        </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-green-700 dark:text-green-400 font-semibold border-b-2 border-green-700 dark:border-green-400 pb-1 font-lexend tracking-tight" href="index.html">Vision</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-600 dark:hover:text-green-300 transition-colors font-lexend tracking-tight" href="technology.html">Technology</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-600 dark:hover:text-green-300 transition-colors font-lexend tracking-tight" href="market.html">Market</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-green-600 dark:hover:text-green-300 transition-colors font-lexend tracking-tight" href="team.html">Team</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2.5 rounded-xl font-semibold transition-all scale-95 active:scale-90 duration-200">
+            Join Waitlist
+        </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Agricultural Landscape" class="w-full h-full object-cover" data-alt="Cinematic wide shot of a high-tech agricultural drone flying over vibrant emerald green rice terraces at sunrise with misty mountains background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6a55PukUfKoO_Bed2iVUP89jjeLt_6C0vsFuFCKKL8q1Wgwjn206sacxqy6iupAdVBKxvc_lSURjspb93_hcfCJxMfwXSc73BZziSL3fvDJaBBd-oTMxd8VdmNZ5EQbOodoRJo2BdJMA9mXo4E5tC0dDa9OQIIfv7ZhuN94Z972zWNMlFDdjBkEScJFmN3loP4LCVPz1lkTmDErAb-ArmIasaSGku9Ab3fGr0QoiyyHerfx_utsgW9d371a8Oj5cKUOCopB1namyB"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary-container/20 text-primary font-semibold text-sm tracking-wide uppercase">
+                    Empowering Smallholders
+                </span>
+<h1 class="text-6xl md:text-8xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tighter">
+                    The AI Physician for <span class="text-primary">120 Million</span> Farmers
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant mb-10 leading-relaxed font-light">
+                    Leveraging Advanced Multimodal AI to diagnose crop health in real-time, bringing elite agronomist expertise to every smartphone in Southeast Asia.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all">
+                        Invest in Tomorrow
+                    </button>
+<div class="flex items-center gap-3 px-6 py-4 glass-card rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-medium">Powered by Proprietary AI Engine</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact & Market Metrics (Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl font-bold tracking-tight mb-4">Scalable Impact. Massive Opportunity.</h2>
+<p class="text-on-surface-variant text-lg">We are not just building an app; we are securing the global food supply chain.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- TAM Card -->
+<div class="md:col-span-2 bg-primary p-12 rounded-[2rem] text-on-primary flex flex-col justify-between min-h-[400px] relative overflow-hidden">
+<div class="z-10">
+<h3 class="text-7xl font-extrabold tracking-tighter mb-4">$1.44B</h3>
+<p class="text-2xl font-medium opacity-90 max-w-md">Market TAM for AI-driven Agritech in SEA by 2026.</p>
+</div>
+<div class="z-10 flex gap-4 mt-8">
+<div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+<span class="block text-3xl font-bold">12%</span>
+<span class="text-sm opacity-80 uppercase tracking-widest">CAGR Growth</span>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+<span class="block text-3xl font-bold">First</span>
+<span class="text-sm opacity-80 uppercase tracking-widest">Mover Edge</span>
+</div>
+</div>
+<!-- Decorative Abstract Shape -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container rounded-full blur-[80px] opacity-50"></div>
+</div>
+<!-- SDG Card -->
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center justify-center text-center border border-outline-variant/10 shadow-sm">
+<div class="w-24 h-24 bg-tertiary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container text-5xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="text-3xl font-bold mb-2">SDG 2</h3>
+<p class="text-on-surface-variant font-medium">Zero Hunger through precision intelligence and waste reduction.</p>
+</div>
+<!-- Farmers Impacted Card -->
+<div class="bg-secondary-container p-12 rounded-[2rem] md:col-span-3 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h3 class="text-6xl font-extrabold text-on-secondary-container tracking-tighter mb-4">120M+</h3>
+<p class="text-xl text-on-secondary-container/80">Farmers across the Mekong Delta and beyond impacted by localized, multimodal AI guidance.</p>
+</div>
+<div class="grid grid-cols-2 gap-4 w-full md:w-auto">
+<img class="w-full h-40 object-cover rounded-2xl" data-alt="Portrait of a smiling elderly Vietnamese rice farmer in a traditional conical hat, sunset lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-eIYI6TMb05HLeRfLb_9RC3Gi-07n1ld1YROzQYC5p02nIeY8ru2bOq1QTj5kaKAGeAuPESGwjLIjPqUDts1gk1Ac8wtMUcEEnxqVhy4uIbu-KGH0brdIn_d4byXGknt4uRMbmlUkNuCyrKh6D1oSyD4ifQS0mWsMorKOeQJxOpZTtHUWA73MjBc3jiGv81h_BeOzIg2kSjzeTbddHxWU-bOeul45phcWj59mZxpbEq7tghLiKgEoRuNwG7coUdqRKw8_CocuWwVY"/>
+<img class="w-full h-40 object-cover rounded-2xl" data-alt="Close up of healthy green crop seedlings being inspected by hands holding a smartphone displaying data" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR1F2UvFIEdcOIezJ5VlgzPmn01xspddJUd5e46dSKeRqrBFBzfjrJnCxNcheGzD5b1qyZOZtnvguh8D8Y6h_KtTq0xZwnRDA8Wt1AUOlMk6XysTDsXh1WZNZeWdWfoyxOrE1kphkUkl4UGnpEEZ31RMdwAbOojXXvo7MmJhVQxktiiiOL92TC6mha1k5LVRYQiucrvy-bvg6BpCwQBiVXXT5g47tXCEk2eJCryzD0dzmGWHpJeIEjtXsdmP7r46548c8LdByzNO8E"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Technology -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-5xl font-bold leading-tight mb-8">Cutting-Edge AI <br/><span class="text-primary">Grounded in Reality.</span></h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed text-3xl">visibility</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Advanced Multimodal Diagnosis</h4>
+<p class="text-on-surface-variant leading-relaxed">Our system processes images, voice, and video simultaneously to detect pests and diseases with 98.4% accuracy.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-16 h-16 bg-secondary-fixed rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">travel_explore</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Verified Real-World Grounding</h4>
+<p class="text-on-surface-variant leading-relaxed">AI responses are verified against live agricultural databases and current market prices to ensure zero-hallucination advice.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-16 h-16 bg-tertiary-fixed rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-3xl">language</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Localized Dialect Support</h4>
+<p class="text-on-surface-variant leading-relaxed">Engineered to understand regional farming dialects and vernacular across Vietnam, Thailand, and Indonesia.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="relative z-10 glass-card p-4 rounded-[2.5rem] border border-outline-variant/30 shadow-2xl">
+<img alt="AI Interface" class="rounded-[2rem] w-full" data-alt="A clean mobile app interface showing a 3D crop health model with AR overlays, sophisticated data visualization, and minimalist UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdXbEtUZ5GVgy5CbLYv0RzqZ5WuK8ijRBGNoe70AekVOQP3Ky25rvBMENfA4KfiUgpXai3dmGQkwiAlxjDmPi5aEy5416-KYLoyL_tigsE1XtXwDx2oD5ixslIeJjuN_xBq8kgJkUfteU-kwTKEvKJCeZIKpuxKQQ0LaAgusUQ-G8MrSfYhyLwTEsJIvxFV6jCKPYR49sMWxxvORdyHyMzuoI_aOWuGMoKjIQ0s1O9U_F7E33J5OEjvLwLM0IBawwnn30XDWbAfP-L"/>
+</div>
+<!-- Background Accents -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Roadmap Section -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-bold mb-4">Building the Unicorn Roadmap</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg">Clear milestones to becoming the dominant AI infrastructure for global agriculture.</p>
+</div>
+<div class="relative flex flex-col md:flex-row justify-between items-start gap-12 md:gap-4">
+<!-- Connection Line (Desktop) -->
+<div class="hidden md:block absolute top-10 left-0 right-0 h-0.5 bg-outline-variant/30 -z-10"></div>
+<!-- Step 1 -->
+<div class="flex-1 bg-surface p-8 rounded-3xl border border-outline-variant/10 shadow-sm relative">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-6 absolute -top-6 left-8">1</div>
+<h4 class="text-lg font-bold mb-2">Q1 2026</h4>
+<p class="font-semibold text-primary mb-3">SEA Expansion</p>
+<p class="text-sm text-on-surface-variant">Scaling localized AI deployments across Vietnam, Thailand, and Indonesia markets.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 bg-surface p-8 rounded-3xl border border-outline-variant/10 shadow-sm relative">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-6 absolute -top-6 left-8">2</div>
+<h4 class="text-lg font-bold mb-2">Q2 2026</h4>
+<p class="font-semibold text-primary mb-3">Data Monetization</p>
+<p class="text-sm text-on-surface-variant">Activating B2B API for supply chain visibility, logistics optimization, and micro-insurance.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 bg-surface p-8 rounded-3xl border border-outline-variant/10 shadow-sm relative">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-6 absolute -top-6 left-8">3</div>
+<h4 class="text-lg font-bold mb-2">Q3 2026</h4>
+<p class="font-semibold text-primary mb-3">Strategic Partnerships</p>
+<p class="text-sm text-on-surface-variant">Deep integration with global agricultural cooperatives and multinational FMCG entities.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex-1 bg-primary-container p-8 rounded-3xl relative">
+<div class="w-12 h-12 bg-on-primary-container text-primary-container rounded-full flex items-center justify-center font-bold mb-6 absolute -top-6 left-8">4</div>
+<h4 class="text-lg font-bold mb-2 text-on-primary-container">2027+</h4>
+<p class="font-semibold text-on-primary-container mb-3">Global Agri-Intelligence Leader</p>
+<p class="text-sm text-on-primary-container/80">Scaling worldwide to establish dominant AI leadership in the global agricultural ecosystem.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Investor/Waitlist CTA -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-gradient-to-br from-primary via-primary-container to-primary/80"></div>
+<!-- Abstract Texture Overlay -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+</div>
+<div class="max-w-4xl mx-auto px-8 relative z-10 text-center text-on-primary">
+<h2 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Partner with the Future of Agriculture</h2>
+<p class="text-xl mb-12 opacity-90 font-light">AgriSense AI is currently in a pre-seed fundraising round. Join our exclusive investor waitlist to receive our pitch deck and technical whitepaper.</p>
+<div class="bg-white/10 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] border border-white/20 shadow-2xl">
+<form class="flex flex-col md:flex-row gap-4" onsubmit="return false;">
+<input class="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/60 rounded-xl px-6 py-4 focus:ring-2 focus:ring-white/50 focus:border-transparent outline-none" placeholder="Full Name" type="text"/>
+<input class="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/60 rounded-xl px-6 py-4 focus:ring-2 focus:ring-white/50 focus:border-transparent outline-none" placeholder="Professional Email" type="email"/>
+<button class="bg-white text-primary hover:bg-surface-container-lowest px-10 py-4 rounded-xl font-bold transition-all shadow-xl active:scale-95">
+                        Join Waitlist
+                    </button>
+</form>
+<p class="mt-6 text-sm opacity-60">Reserved for accredited investors and strategic partners only.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
+<div>
+<div class="text-xl font-bold text-slate-800 dark:text-slate-200 font-lexend mb-4">AgriSense AI</div>
+<p class="text-slate-500 dark:text-slate-500 font-lexend text-body-md max-w-xs">
+                © 2024 AgriSense AI. Harvesting Intelligence for a Greener Planet.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<a class="text-slate-500 dark:text-slate-500 hover:text-green-700 dark:hover:text-green-300 underline transition-all font-lexend text-body-md" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-green-700 dark:hover:text-green-300 underline transition-all font-lexend text-body-md" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="text-slate-500 dark:text-slate-500 hover:text-green-700 dark:hover:text-green-300 underline transition-all font-lexend text-body-md" href="#">SDG Impact</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-green-700 dark:hover:text-green-300 underline transition-all font-lexend text-body-md" href="#">Contact Us</a>
+</div>
+</div>
+<div class="md:text-right">
+<p class="text-slate-400 text-xs mb-4 uppercase tracking-widest">Connect with our founders</p>
+<div class="flex md:justify-end gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center opacity-80 hover:opacity-100 duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-slate-600">groups</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center opacity-80 hover:opacity-100 duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-slate-600">campaign</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

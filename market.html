@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Market Analysis | AgriSense AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    body { font-family: 'Lexend', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-secondary": "#ffffff",
+                  "surface-dim": "#dbd9dd",
+                  "on-secondary-fixed": "#2e150b",
+                  "secondary-fixed": "#ffdbcf",
+                  "inverse-on-surface": "#f1f0f4",
+                  "surface-container-low": "#f4f3f7",
+                  "surface-tint": "#006e2c",
+                  "tertiary-fixed-dim": "#ffba45",
+                  "surface": "#faf9fd",
+                  "primary-container": "#34a853",
+                  "on-surface": "#1a1b1e",
+                  "on-secondary-fixed-variant": "#603f33",
+                  "inverse-surface": "#2f3033",
+                  "on-error": "#ffffff",
+                  "tertiary-container": "#c68700",
+                  "error-container": "#ffdad6",
+                  "surface-container-highest": "#e3e2e6",
+                  "secondary-container": "#fdcdbc",
+                  "outline-variant": "#bdcaba",
+                  "on-tertiary-fixed": "#281800",
+                  "on-background": "#1a1b1e",
+                  "on-secondary-container": "#795548",
+                  "on-tertiary-fixed-variant": "#614000",
+                  "surface-bright": "#faf9fd",
+                  "tertiary-fixed": "#ffddb0",
+                  "tertiary": "#805600",
+                  "on-primary-fixed-variant": "#005320",
+                  "surface-variant": "#e3e2e6",
+                  "inverse-primary": "#6ddd81",
+                  "on-tertiary": "#ffffff",
+                  "primary": "#006e2c",
+                  "surface-container-high": "#e9e7eb",
+                  "surface-container": "#efedf1",
+                  "secondary-fixed-dim": "#ebbcac",
+                  "on-error-container": "#93000a",
+                  "error": "#ba1a1a",
+                  "background": "#faf9fd",
+                  "on-tertiary-container": "#3e2800",
+                  "on-surface-variant": "#3e4a3e",
+                  "on-primary-container": "#003511",
+                  "on-primary": "#ffffff",
+                  "primary-fixed-dim": "#6ddd81",
+                  "outline": "#6e7a6d",
+                  "secondary": "#7a5649",
+                  "primary-fixed": "#89fa9b",
+                  "surface-container-lowest": "#ffffff",
+                  "on-primary-fixed": "#002108"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          }
+        },
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Shell -->
+<nav class="w-full sticky top-0 z-50 bg-[#faf9fd] dark:bg-gray-950 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-bold text-[#006e2c] dark:text-[#34a853] no-underline" href="index.html">AgriSense AI</a>
+<div class="hidden md:flex gap-6 font-['Lexend'] text-sm font-medium tracking-tight">
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors" href="index.html">Vision</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors" href="technology.html">Technology</a>
+<a class="text-[#006e2c] dark:text-[#34a853] font-semibold border-b-2 border-[#006e2c] pb-1" href="market.html">Market</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#34a853] transition-colors" href="team.html">Team</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer p-2 hover:bg-gray-100/50 rounded-full transition-all" data-icon="language">language</span>
+<button class="bg-[#006e2c] text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-[#34a853] active:scale-95 transition-all shadow-md">
+          Invest Now
+        </button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-8 py-12">
+<!-- Hero Section: Editorial Presence -->
+<header class="mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-3xl">
+<p class="text-primary font-bold tracking-widest text-sm mb-4">MARKET ANALYSIS 2024</p>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] text-on-surface mb-6">
+            SEA Market <br/>Opportunity
+          </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+            Bridging the intelligence gap in Southeast Asia's agricultural heartlands through localized, multimodal AI solutions.
+          </p>
+</div>
+<div class="hidden lg:block w-48 h-48 rounded-full border-[12px] border-primary-container/20 flex items-center justify-center p-4">
+<div class="text-center">
+<span class="block text-4xl font-bold text-primary">#1</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">First Mover</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20">
+<!-- Section 1: TAM Card -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-[2rem] p-10 flex flex-col justify-between overflow-hidden relative group">
+<div class="relative z-10">
+<h2 class="text-primary font-bold text-sm tracking-widest mb-2">01 / TOTAL ADDRESSABLE MARKET</h2>
+<h3 class="text-4xl font-bold mb-6">The Billion-Dollar <br/>Agri-Tech Surge</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-8xl font-black text-primary tracking-tighter">$1.44B</span>
+</div>
+<p class="mt-4 text-on-surface-variant max-w-md">Estimated market size for precision agricultural AI in Southeast Asia by 2027, growing at a CAGR of 14.2%.</p>
+</div>
+<!-- Abstract Growth Graph Visual -->
+<div class="mt-12 h-32 flex items-end gap-1.5 overflow-hidden">
+<div class="w-full bg-surface-container-high h-1/4 rounded-t-lg"></div>
+<div class="w-full bg-surface-container-high h-1/3 rounded-t-lg"></div>
+<div class="w-full bg-primary-container/40 h-1/2 rounded-t-lg"></div>
+<div class="w-full bg-primary-container/60 h-2/3 rounded-t-lg"></div>
+<div class="w-full bg-primary h-full rounded-t-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Farmer Landscape Card -->
+<div class="md:col-span-5 bg-surface-container-low rounded-[2rem] p-10 flex flex-col">
+<h2 class="text-primary font-bold text-sm tracking-widest mb-2">02 / THE LANDSCAPE</h2>
+<h3 class="text-4xl font-bold mb-8">Smallholder Ecosystem</h3>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="groups">groups</span>
+</div>
+<div>
+<p class="text-3xl font-bold text-on-surface">120M+</p>
+<p class="text-sm text-on-surface-variant font-medium">Farmers in SEA Region</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="landscape">landscape</span>
+</div>
+<div>
+<p class="text-3xl font-bold text-on-surface">85%</p>
+<p class="text-sm text-on-surface-variant font-medium">Small-scale operations (&lt;2ha)</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="phone_iphone">phone_iphone</span>
+</div>
+<div>
+<p class="text-3xl font-bold text-on-surface">92%</p>
+<p class="text-sm text-on-surface-variant font-medium">Mobile connectivity penetration</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Competitive Advantage (First Mover) -->
+<div class="md:col-span-12 relative h-[500px] rounded-[3rem] overflow-hidden">
+<img alt="SEA Farmland" class="absolute inset-0 w-full h-full object-cover" data-alt="vibrant rice paddies in Southeast Asia with lush green hills and soft tropical sunlight during early morning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnNTyZikHvmkWsJgLccPho-uAsWwDJM7EiNc5KikYG1A7LHOZIhPo1S-93q-1hrsne3pq0Nt5Du7OJBxijvXTQXQ8wZ9mC53NAUpGOFFqsUOS7DlXEF-ep8jqGKzVV6NeNjXfedHXjO_pDnBu_mrDtdX7IQx8n1NZFsOB7xuvXPwqAmO9BtjY5AEZZXrnvIoYzNkJiEP_tjsrL1OPEThqW2qU_i9DmB42neEBKiYR4sFd4bBqztbbxF_DQS7_oaKKiNS5nTEElpCoK"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute inset-0 flex items-center p-12 md:p-20">
+<div class="max-w-2xl text-white">
+<h2 class="font-bold text-sm tracking-[0.2em] mb-4 text-primary-fixed uppercase">03 / Competitive Advantage</h2>
+<h3 class="text-5xl font-black mb-6 leading-tight">Multimodal AI, <br/>Localized Context.</h3>
+<p class="text-lg text-white/90 mb-10 leading-relaxed font-light">
+              Unlike generic satellite platforms, AgriSense AI combines computer vision, soil sensor telemetry, and local dialect LLMs to provide actionable advice in the farmer's pocket.
+            </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+<span class="material-symbols-outlined text-primary-fixed mb-3" data-icon="translate">translate</span>
+<p class="text-sm font-bold uppercase tracking-tighter">Localized NLP</p>
+<p class="text-xs text-white/70">Support for 14+ dialects</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+<span class="material-symbols-outlined text-primary-fixed mb-3" data-icon="psychology">psychology</span>
+<p class="text-sm font-bold uppercase tracking-tighter">First Mover</p>
+<p class="text-xs text-white/70">Unique regional data moat</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Investor Insights: Asymmetric Highlight -->
+<section class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+<div class="relative glass-card border border-outline-variant/20 p-12 rounded-[2.5rem] shadow-2xl">
+<span class="material-symbols-outlined text-6xl text-primary mb-6" data-icon="verified" data-weight="fill">verified</span>
+<h4 class="text-3xl font-bold mb-4 italic">"The scalability of AgriSense AI lies in its ability to digest fragmented data into unified regional intelligence."</h4>
+<p class="text-on-surface-variant">— Dr. Somchai P., Agri-Innovation Council</p>
+</div>
+</div>
+<div>
+<h2 class="text-primary font-bold text-sm tracking-widest mb-6">INVESTOR OUTLOOK</h2>
+<h3 class="text-4xl font-bold mb-6">Strategic Exit &amp; Growth</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+          Our strategy focuses on vertical integration within the first 36 months, capturing the supply chain data layer before expanding into the high-growth markets of Vietnam, Thailand, and Indonesia.
+        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-medium">Series A Roadmap: Scaling to 1M daily active users</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-medium">B2G Partnerships: Secured 3 MOU drafts with regional ministries</span>
+</li>
+</ul>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full bg-[#f4f3f7] dark:bg-gray-900 py-12 px-8 border-t border-[#bdcaba]/20">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto w-full gap-8">
+<div>
+<span class="text-xl font-bold text-[#006e2c] mb-2 block">AgriSense AI</span>
+<p class="font-['Lexend'] text-body-md text-gray-600 dark:text-gray-400">
+          © 2024 AgriSense AI. Precision through data, warmth through texture.
+        </p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-2 font-['Lexend'] text-body-md text-gray-600 dark:text-gray-400">
+<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Investor Relations</a>
+<a class="text-gray-500 hover:text-[#006e2c] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>
