@@ -105,8 +105,7 @@
 <a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="team.html">Team</a>
 </div>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-gray-500 cursor-pointer p-2 hover:bg-gray-100/50 rounded-full transition-all">language</span>
-<button class="bg-[#006e2c] text-white px-6 py-2.5 rounded-xl font-['Lexend'] font-semibold hover:bg-[#34a853] active:scale-95 transition-all shadow-md">Invest Now</button>
+<a href="#waitlist" class="bg-[#006e2c] text-white px-6 py-2.5 rounded-xl font-['Lexend'] font-semibold hover:bg-[#34a853] active:scale-95 transition-all shadow-md no-underline">Contact Us</a>
 </div>
 </div>
 </nav>
@@ -278,7 +277,7 @@
 </div>
 </section>
 <!-- Investor/Waitlist CTA -->
-<section class="py-24 relative overflow-hidden">
+<section id="waitlist" class="py-24 relative overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="w-full h-full bg-gradient-to-br from-primary via-primary-container to-primary/80"></div>
 <!-- Abstract Texture Overlay -->
@@ -289,10 +288,10 @@
 <p class="text-xl mb-4 opacity-90 font-light">AgriSense AI is raising a pre-seed round to accelerate our 500-farm pilot programme and Google Cloud deployment. We are applying to the <strong>Google for Startups Cloud Program (AI Tier)</strong> and welcome strategic co-investors aligned with food security and climate tech.</p>
 <p class="text-base mb-12 opacity-70">Register below to receive our pitch deck, technical brief, and pilot results summary.</p>
 <div class="bg-white/10 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] border border-white/20 shadow-2xl">
-<form class="flex flex-col md:flex-row gap-4" action="https://formspree.io/f/agrisense-waitlist" method="POST">
+<form id="waitlist-form" class="flex flex-col md:flex-row gap-4">
 <input class="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/60 rounded-xl px-6 py-4 focus:ring-2 focus:ring-white/50 focus:border-transparent outline-none" placeholder="Full Name" type="text" name="name" required/>
 <input class="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/60 rounded-xl px-6 py-4 focus:ring-2 focus:ring-white/50 focus:border-transparent outline-none" placeholder="Professional Email" type="email" name="email" required/>
-<button class="bg-white text-primary hover:bg-surface-container-lowest px-10 py-4 rounded-xl font-bold transition-all shadow-xl active:scale-95" type="submit">
+<button class="bg-white text-primary hover:bg-surface-container-lowest px-10 py-4 rounded-xl font-bold transition-all shadow-xl active:scale-95" type="submit" id="waitlist-btn">
                         Request Access
                     </button>
 </form>
@@ -312,22 +311,72 @@
 <p class="font-['Lexend'] text-sm text-gray-500 dark:text-gray-400 max-w-xs leading-relaxed">© 2026 AgriSense AI.<br/>Harvesting Intelligence for a Greener Planet.</p>
 </div>
 <div class="flex flex-col gap-3 font-['Lexend'] text-sm">
-<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Privacy Policy</a>
-<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Terms of Service</a>
-<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Investor Relations</a>
-<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="#">Contact Us</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="index.html#waitlist">Investor Relations</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="mailto:team@agrisense.ai">Contact Us</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="team.html">Our Team</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="technology.html">Technology</a>
 </div>
 <div class="md:text-right">
-<p class="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4 font-['Lexend']">Follow the journey</p>
-<div class="flex md:justify-end gap-3">
-<a href="#" class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-[#bdcaba]/30 flex items-center justify-center opacity-80 hover:opacity-100 hover:border-[#006e2c] transition-all shadow-sm">
-<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#006e2c]" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-</a>
-<a href="#" class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-[#bdcaba]/30 flex items-center justify-center opacity-80 hover:opacity-100 hover:border-[#006e2c] transition-all shadow-sm">
-<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#006e2c]" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-</a>
-</div>
+<p class="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4 font-['Lexend']">Get in touch</p>
+<a href="mailto:team@agrisense.ai" class="inline-block font-['Lexend'] text-sm text-[#006e2c] dark:text-[#34a853] font-semibold hover:underline decoration-[#34a853] underline-offset-4">team@agrisense.ai</a>
 </div>
 </div>
 </footer>
+<script>
+// ===== Google Sheets Integration =====
+// STEP 1: Create a Google Sheet
+// STEP 2: Go to Extensions > Apps Script, paste the code from setup-google-sheets.js
+// STEP 3: Deploy as Web App, paste the URL below:
+const GOOGLE_SHEETS_URL = '';
+
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('waitlist-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('waitlist-btn');
+    var origText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    btn.classList.add('opacity-70');
+
+    var nameVal = form.querySelector('[name="name"]').value.trim();
+    var emailVal = form.querySelector('[name="email"]').value.trim();
+
+    if (GOOGLE_SHEETS_URL) {
+      try {
+        await fetch(GOOGLE_SHEETS_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name: nameVal, email: emailVal, timestamp: new Date().toISOString(), source: document.referrer || 'direct' })
+        });
+      } catch(err) { /* Sheets endpoint not configured yet */ }
+    }
+
+    form.innerHTML = '<div class="text-center py-6">' +
+      '<div class="text-5xl mb-4">✅</div>' +
+      '<h3 class="text-2xl font-bold mb-2">Thank you, ' + nameVal + '!</h3>' +
+      '<p class="opacity-80">We\'ll send our pitch deck and technical brief to <strong>' + emailVal + '</strong> within 48 hours.</p>' +
+      '</div>';
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href*="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      var hash = this.getAttribute('href');
+      if (hash.indexOf('#') === -1) return;
+      var targetId = hash.split('#')[1];
+      if (!targetId) return;
+      var target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + targetId);
+      }
+    });
+  });
+});
+</script>
 </body></html>
