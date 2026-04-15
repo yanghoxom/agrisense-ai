@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Product — AgriSense AI</title>
+<meta name="description" content="AgriSense AI product overview — AI-powered crop diagnostics, voice-first interaction, and smart market intelligence accessible from any smartphone."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-secondary": "#ffffff",
+                  "surface-dim": "#dbd9dd",
+                  "on-secondary-fixed": "#2e150b",
+                  "secondary-fixed": "#ffdbcf",
+                  "inverse-on-surface": "#f1f0f4",
+                  "surface-container-low": "#f4f3f7",
+                  "surface-tint": "#006e2c",
+                  "tertiary-fixed-dim": "#ffba45",
+                  "surface": "#faf9fd",
+                  "primary-container": "#34a853",
+                  "on-surface": "#1a1b1e",
+                  "on-secondary-fixed-variant": "#603f33",
+                  "inverse-surface": "#2f3033",
+                  "on-error": "#ffffff",
+                  "tertiary-container": "#c68700",
+                  "error-container": "#ffdad6",
+                  "surface-container-highest": "#e3e2e6",
+                  "secondary-container": "#fdcdbc",
+                  "outline-variant": "#bdcaba",
+                  "on-tertiary-fixed": "#281800",
+                  "on-background": "#1a1b1e",
+                  "on-secondary-container": "#795548",
+                  "on-tertiary-fixed-variant": "#614000",
+                  "surface-bright": "#faf9fd",
+                  "tertiary-fixed": "#ffddb0",
+                  "tertiary": "#805600",
+                  "on-primary-fixed-variant": "#005320",
+                  "surface-variant": "#e3e2e6",
+                  "inverse-primary": "#6ddd81",
+                  "on-tertiary": "#ffffff",
+                  "primary": "#006e2c",
+                  "surface-container-high": "#e9e7eb",
+                  "surface-container": "#efedf1",
+                  "secondary-fixed-dim": "#ebbcac",
+                  "on-error-container": "#93000a",
+                  "error": "#ba1a1a",
+                  "background": "#faf9fd",
+                  "on-tertiary-container": "#3e2800",
+                  "on-surface-variant": "#3e4a3e",
+                  "on-primary-container": "#003511",
+                  "on-primary": "#ffffff",
+                  "primary-fixed-dim": "#6ddd81",
+                  "outline": "#6e7a6d",
+                  "secondary": "#7a5649",
+                  "primary-fixed": "#89fa9b",
+                  "surface-container-lowest": "#ffffff",
+                  "on-primary-fixed": "#002108"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "fontFamily": {
+                  "headline": ["Lexend"],
+                  "body": ["Lexend"],
+                  "label": ["Lexend"]
+          }
+        },
+      }
+    }
+</script>
+<style>
+    body { font-family: 'Lexend', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+
+<!-- Navigation -->
+<nav class="w-full sticky top-0 z-50 bg-[#faf9fd] dark:bg-gray-950 border-b border-[#bdcaba]/20 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="flex items-center gap-2 no-underline" href="index.html">
+<img src="logo.png" alt="AgriSense AI Logo" class="h-9 w-9 object-contain"/>
+<span class="text-2xl font-bold text-[#006e2c] dark:text-[#34a853] font-['Lexend'] tracking-tight">AgriSense AI</span>
+</a>
+<div class="hidden md:flex gap-8 items-center font-['Lexend'] text-sm font-medium tracking-tight">
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="index.html">Vision</a>
+<a class="text-[#006e2c] dark:text-[#34a853] font-semibold border-b-2 border-[#006e2c] dark:border-[#34a853] pb-1" href="product.html">Product</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="technology.html">Technology</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="market.html">Market</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-colors" href="team.html">Team</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="index.html#waitlist" class="bg-[#006e2c] text-white px-6 py-2.5 rounded-xl font-['Lexend'] font-semibold hover:bg-[#34a853] active:scale-95 transition-all shadow-md no-underline">Contact Us</a>
+</div>
+</div>
+</nav>
+
+<main class="relative">
+
+<!-- ============================================================ -->
+<!-- 1. HERO SECTION -->
+<!-- ============================================================ -->
+<section class="relative min-h-[70vh] flex items-center py-24 overflow-hidden bg-gradient-to-br from-[#006e2c]/5 via-surface to-primary-fixed/10">
+  <!-- Decorative blurs -->
+  <div class="absolute top-20 -left-32 w-96 h-96 bg-primary-container/20 rounded-full blur-[80px]"></div>
+  <div class="absolute bottom-10 right-0 w-80 h-80 bg-tertiary-fixed/20 rounded-full blur-[80px]"></div>
+
+  <div class="max-w-7xl mx-auto px-8 relative z-10">
+    <div class="max-w-3xl">
+      <span class="inline-flex items-center gap-2 bg-primary/10 text-primary font-semibold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
+        <span class="material-symbols-outlined text-base">auto_awesome</span>
+        Built on Google Gemini 2.0 Flash
+      </span>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-on-surface">
+        The AI Agronomist in Every Farmer's Pocket
+      </h1>
+      <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
+        A mobile-first, AI-powered diagnostic platform that turns any smartphone into a precision agriculture tool. Snap a photo, speak in your local dialect, and receive expert-grade crop analysis — no agronomist degree required.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="index.html#waitlist" class="inline-flex items-center gap-2 bg-[#006e2c] text-white px-8 py-3.5 rounded-xl font-semibold hover:bg-[#34a853] active:scale-95 transition-all shadow-lg no-underline text-base">
+          <span class="material-symbols-outlined text-xl">play_arrow</span>
+          Try Demo
+        </a>
+        <a href="technology.html" class="inline-flex items-center gap-2 bg-white border-2 border-[#006e2c] text-[#006e2c] px-8 py-3.5 rounded-xl font-semibold hover:bg-primary/5 active:scale-95 transition-all no-underline text-base">
+          <span class="material-symbols-outlined text-xl">memory</span>
+          View Technology
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 2. THREE CORE CAPABILITIES (Bento-style) -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Core Capabilities</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Three Pillars of Smart Farming</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Each capability is designed around the real constraints of smallholder farmers — low bandwidth, varied literacy, and limited access to experts.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- Visual Crop Diagnosis -->
+      <div class="glass-card rounded-3xl border border-outline-variant/30 p-8 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-container/15 rounded-full blur-3xl group-hover:bg-primary-container/25 transition-all"></div>
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-3xl text-primary">photo_camera</span>
+        </div>
+        <h3 class="text-xl font-bold text-on-surface mb-3">Visual Crop Diagnosis</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-5">Snap a photo of any affected leaf, fruit, or stem and receive an instant AI-powered diagnosis with actionable treatment recommendations.</p>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">240+ diseases, pests &amp; nutrient deficiencies</strong> identified across 50+ crop types including rice, cassava, coffee, and vegetables</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Works in low-light &amp; rainy conditions</strong> — adaptive image preprocessing handles real-world field photography</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Confidence scores &amp; source citations</strong> — every diagnosis links to peer-reviewed agricultural databases</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Sub-3-second inference</strong> — on-device processing via Google AI Edge with cloud fallback</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Voice-First Interaction -->
+      <div class="glass-card rounded-3xl border border-outline-variant/30 p-8 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-tertiary-fixed/20 rounded-full blur-3xl group-hover:bg-tertiary-fixed/30 transition-all"></div>
+        <div class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-3xl text-tertiary">mic</span>
+        </div>
+        <h3 class="text-xl font-bold text-on-surface mb-3">Voice-First Interaction</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-5">Designed for farmers who prefer speaking over typing. Describe symptoms in your own language and receive spoken guidance in the same dialect.</p>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-tertiary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">14+ local dialects supported</strong> — Vietnamese, Thai, Khmer, Lao, Bahasa, Tagalog, Hindi, Bengali, and more</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-tertiary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Describe symptoms verbally</strong> — "My rice leaves have brown spots and are curling" triggers targeted diagnosis</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-tertiary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Voice response in same dialect</strong> — audio playback with on-screen text for accessibility</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-tertiary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Google Cloud Speech-to-Text v2</strong> — fine-tuned on agricultural terminology for high accuracy</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Smart Market Intelligence -->
+      <div class="glass-card rounded-3xl border border-outline-variant/30 p-8 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-container/20 rounded-full blur-3xl group-hover:bg-secondary-container/30 transition-all"></div>
+        <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-3xl text-secondary">trending_up</span>
+        </div>
+        <h3 class="text-xl font-bold text-on-surface mb-3">Smart Market Intelligence</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-5">Go beyond diagnostics with real-time market data that helps farmers make profitable decisions about when and where to sell their harvest.</p>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Real-time commodity prices</strong> — aggregated from local exchanges, cooperatives, and government sources</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Optimal harvest timing advice</strong> — AI-driven recommendations based on price trends and crop maturity</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Nearby input dealer locations</strong> — find fertilizer, pesticide, and seed dealers via Google Maps integration</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Weather-integrated recommendations</strong> — spray timing and planting windows adjusted for 7-day forecasts</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 3. APP INTERFACE WALKTHROUGH -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-xs uppercase tracking-widest text-primary font-semibold mb-3">App Walkthrough</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Experience AgriSense, Screen by Screen</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">A clean, intuitive interface designed for farmers in the field — large tap targets, minimal text, and instant results.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Home Screen -->
+      <div class="relative group">
+        <div class="bg-white rounded-[2rem] border border-outline-variant/30 shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="bg-gradient-to-br from-primary to-primary-container p-5 text-white">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-medium opacity-80">9:41 AM</span>
+              <div class="flex gap-1">
+                <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+                <span class="material-symbols-outlined text-sm">battery_full</span>
+              </div>
+            </div>
+            <p class="text-sm font-bold">AgriSense AI</p>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="flex items-center gap-3 bg-primary/5 rounded-xl p-3">
+              <span class="material-symbols-outlined text-primary">eco</span>
+              <div>
+                <p class="text-xs font-bold text-on-surface">Crop Health</p>
+                <p class="text-[10px] text-on-surface-variant">3 farms • 92% healthy</p>
+              </div>
+              <span class="ml-auto text-xs font-bold text-primary">Good</span>
+            </div>
+            <div class="flex items-center gap-3 bg-tertiary/5 rounded-xl p-3">
+              <span class="material-symbols-outlined text-tertiary">cloud</span>
+              <div>
+                <p class="text-xs font-bold text-on-surface">Weather</p>
+                <p class="text-[10px] text-on-surface-variant">28°C • 70% humidity</p>
+              </div>
+              <span class="ml-auto text-xs font-bold text-tertiary">Humid</span>
+            </div>
+            <div class="bg-surface-container-low rounded-xl p-3">
+              <p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mb-2">Recent Diagnoses</p>
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 bg-error rounded-full"></div>
+                  <span class="text-[10px] text-on-surface">Leaf Blast — Rice • 2h ago</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 bg-primary rounded-full"></div>
+                  <span class="text-[10px] text-on-surface">Healthy — Coffee • 1d ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button class="bg-primary text-white text-[10px] font-bold py-2.5 rounded-xl flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined text-sm">photo_camera</span> Scan
+              </button>
+              <button class="bg-surface-container-high text-on-surface text-[10px] font-bold py-2.5 rounded-xl flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined text-sm">mic</span> Voice
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4 font-semibold text-sm text-on-surface">Home Screen</p>
+        <p class="text-center text-xs text-on-surface-variant mt-1">Crop health dashboard, weather widget, recent diagnoses &amp; quick-action buttons</p>
+      </div>
+
+      <!-- Diagnosis Screen -->
+      <div class="relative group">
+        <div class="bg-white rounded-[2rem] border border-outline-variant/30 shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="bg-gray-900 p-5 text-white relative">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-medium opacity-80">9:42 AM</span>
+              <div class="flex gap-1">
+                <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+                <span class="material-symbols-outlined text-sm">battery_full</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm">arrow_back</span>
+              <p class="text-sm font-bold">Diagnosis</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="bg-gray-100 rounded-xl h-28 flex items-center justify-center relative">
+              <span class="material-symbols-outlined text-4xl text-gray-400">image</span>
+              <div class="absolute inset-0 border-2 border-primary/40 rounded-xl border-dashed"></div>
+              <span class="absolute top-2 right-2 bg-primary text-white text-[8px] font-bold px-2 py-0.5 rounded-full">AI SCANNING</span>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mb-2">Detection Results</p>
+              <div class="space-y-2">
+                <div>
+                  <div class="flex justify-between text-[10px] mb-1">
+                    <span class="font-bold text-error">Rice Blast (Pyricularia oryzae)</span>
+                    <span class="font-bold text-error">94%</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-gray-200 rounded-full"><div class="h-1.5 bg-error rounded-full" style="width:94%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-[10px] mb-1">
+                    <span class="font-medium text-on-surface-variant">Brown Spot</span>
+                    <span class="text-on-surface-variant">4%</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-gray-200 rounded-full"><div class="h-1.5 bg-gray-400 rounded-full" style="width:4%"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 bg-error/10 rounded-xl p-2.5">
+              <span class="material-symbols-outlined text-error text-lg">warning</span>
+              <span class="text-[10px] font-semibold text-error">Severity: High — Treat within 48h</span>
+            </div>
+            <button class="w-full bg-primary text-white text-[10px] font-bold py-2.5 rounded-xl">View Treatment Plan →</button>
+          </div>
+        </div>
+        <p class="text-center mt-4 font-semibold text-sm text-on-surface">Diagnosis Screen</p>
+        <p class="text-center text-xs text-on-surface-variant mt-1">Camera view with AI overlay, disease confidence bars &amp; severity indicator</p>
+      </div>
+
+      <!-- Treatment Plan -->
+      <div class="relative group">
+        <div class="bg-white rounded-[2rem] border border-outline-variant/30 shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="bg-gradient-to-r from-primary to-primary-container/80 p-5 text-white">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-medium opacity-80">9:43 AM</span>
+              <div class="flex gap-1">
+                <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+                <span class="material-symbols-outlined text-sm">battery_full</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm">arrow_back</span>
+              <p class="text-sm font-bold">Treatment Plan</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-3">
+            <div class="bg-error/5 border border-error/20 rounded-xl p-3">
+              <p class="text-[10px] font-bold text-error mb-1">Rice Blast (Pyricularia oryzae)</p>
+              <p class="text-[9px] text-on-surface-variant leading-relaxed">Fungal disease affecting leaves, nodes, and panicles. Spread by wind-borne spores in humid conditions.</p>
+            </div>
+            <div class="bg-primary/5 rounded-xl p-3">
+              <p class="text-[10px] font-bold text-primary mb-1">💊 Recommended Treatment</p>
+              <p class="text-[9px] text-on-surface-variant"><strong>Tricyclazole 75% WP</strong></p>
+              <p class="text-[9px] text-on-surface-variant">Dosage: 0.6g/L • Spray: 500L/ha</p>
+              <p class="text-[9px] text-on-surface-variant">Est. cost: ₫45,000/ha (~$1.80)</p>
+            </div>
+            <div class="bg-tertiary/5 rounded-xl p-3">
+              <p class="text-[10px] font-bold text-tertiary mb-1">🏪 Where to Buy</p>
+              <p class="text-[9px] text-on-surface-variant">Vật Tư Nông Nghiệp Minh Phát — 1.2 km</p>
+              <p class="text-[9px] text-on-surface-variant">Cửa Hàng Phân Bón Tâm An — 3.4 km</p>
+            </div>
+            <div class="bg-surface-container-low rounded-xl p-3">
+              <p class="text-[10px] font-bold text-on-surface mb-1">📚 Sources</p>
+              <p class="text-[8px] text-on-surface-variant leading-relaxed">IRRI Rice Knowledge Bank (2024) • Vietnam MARD Pest Alert DB • FAO Crop Protection Compendium</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4 font-semibold text-sm text-on-surface">Treatment Plan</p>
+        <p class="text-center text-xs text-on-surface-variant mt-1">Disease details, treatment dosage, cost estimate, where to buy &amp; source citations</p>
+      </div>
+
+      <!-- Farm History -->
+      <div class="relative group">
+        <div class="bg-white rounded-[2rem] border border-outline-variant/30 shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="bg-gradient-to-r from-secondary to-secondary-container/80 p-5 text-white">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-medium opacity-80">9:44 AM</span>
+              <div class="flex gap-1">
+                <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+                <span class="material-symbols-outlined text-sm">battery_full</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm">arrow_back</span>
+              <p class="text-sm font-bold">Farm History</p>
+            </div>
+          </div>
+          <div class="p-5 space-y-3">
+            <div class="bg-surface-container-low rounded-xl p-3">
+              <p class="text-[10px] font-bold text-on-surface mb-2">Health Trend (6 months)</p>
+              <div class="flex items-end gap-1 h-12">
+                <div class="flex-1 bg-error/60 rounded-t" style="height:70%"></div>
+                <div class="flex-1 bg-error/40 rounded-t" style="height:50%"></div>
+                <div class="flex-1 bg-tertiary/50 rounded-t" style="height:40%"></div>
+                <div class="flex-1 bg-primary/40 rounded-t" style="height:30%"></div>
+                <div class="flex-1 bg-primary/60 rounded-t" style="height:20%"></div>
+                <div class="flex-1 bg-primary rounded-t" style="height:10%"></div>
+              </div>
+              <div class="flex justify-between text-[7px] text-on-surface-variant mt-1">
+                <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+              </div>
+              <p class="text-[8px] text-primary font-semibold mt-1">↓ 85% fewer infections since onboarding</p>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold mb-2">Timeline</p>
+              <div class="space-y-2">
+                <div class="flex gap-2 items-start">
+                  <div class="w-1.5 h-1.5 bg-error rounded-full mt-1.5 shrink-0"></div>
+                  <div>
+                    <p class="text-[9px] font-bold text-on-surface">Rice Blast detected</p>
+                    <p class="text-[8px] text-on-surface-variant">Field A • Jun 12</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 items-start">
+                  <div class="w-1.5 h-1.5 bg-tertiary rounded-full mt-1.5 shrink-0"></div>
+                  <div>
+                    <p class="text-[9px] font-bold text-on-surface">Nitrogen deficiency</p>
+                    <p class="text-[8px] text-on-surface-variant">Field B • May 28</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 items-start">
+                  <div class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 shrink-0"></div>
+                  <div>
+                    <p class="text-[9px] font-bold text-on-surface">All clear ✓</p>
+                    <p class="text-[8px] text-on-surface-variant">Field A • May 15</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="w-full bg-secondary text-white text-[10px] font-bold py-2 rounded-xl">Export Report (PDF)</button>
+          </div>
+        </div>
+        <p class="text-center mt-4 font-semibold text-sm text-on-surface">Farm History</p>
+        <p class="text-center text-xs text-on-surface-variant mt-1">Diagnosis timeline, crop health trend graph, seasonal analytics &amp; reports</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 4. FEATURE GRID -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Full Feature Set</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Everything a Modern Farm Needs</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Built for the realities of smallholder agriculture — every feature works offline, in low bandwidth, and across literacy levels.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">wifi_off</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Offline-First</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Full diagnostics without internet via Google AI Edge on-device models. Syncs when connected.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-tertiary mb-3 block">thunderstorm</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Real-Time Weather Alerts</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Push notifications for pest-favorable conditions, frost warnings, and optimal spray windows.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-secondary mb-3 block">groups</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Cooperative Dashboard</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Bulk analysis for co-ops and extension agents. Monitor 1000+ farms from a single dashboard.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">storefront</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Input Marketplace</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Direct links to nearby dealers for fertilizers, pesticides, and seeds with price comparison.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-tertiary mb-3 block">calendar_month</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Seasonal Crop Calendar</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Region-specific planting, fertilizing, and harvesting schedules tailored to your crops.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-secondary mb-3 block">download</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Export Reports (PDF/CSV)</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Generate professional reports for lenders, cooperatives, or government extension programs.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">landscape</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Multi-Farm Management</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Manage multiple plots, fields, and crop types with individual health tracking and analytics.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-tertiary mb-3 block">notifications_active</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Push Reminders</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Automated reminders for spray schedules, follow-up checks, and harvest windows.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-secondary mb-3 block">photo_library</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Photo History &amp; Comparison</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Side-by-side comparison of crop photos over time to track treatment effectiveness visually.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <span class="material-symbols-outlined text-3xl text-primary mb-3 block">forum</span>
+        <h4 class="font-bold text-sm text-on-surface mb-1">Community Knowledge Base</h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Farmer-contributed tips, regional best practices, and peer-validated treatment outcomes.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 5. PRICING SECTION -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Pricing</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Affordable for Every Farmer</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Priced for the realities of smallholder agriculture in Southeast Asia. Our free tier ensures every farmer has access to life-saving crop diagnostics.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+      <!-- Free Tier -->
+      <div class="bg-white rounded-3xl border border-outline-variant/30 p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="mb-6">
+          <p class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold mb-1">Nông dân</p>
+          <h3 class="text-2xl font-bold text-on-surface">Free</h3>
+          <p class="text-sm text-on-surface-variant mt-1">For individual smallholder farmers</p>
+        </div>
+        <ul class="space-y-3 text-sm flex-1 mb-8">
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">10 diagnoses/month</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Basic disease identification</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Treatment recommendations</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">1 farm profile</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Community support</span>
+          </li>
+        </ul>
+        <a href="index.html#waitlist" class="block text-center bg-surface-container-high text-on-surface font-semibold py-3 rounded-xl hover:bg-surface-container-highest transition-all no-underline text-sm">Get Started Free</a>
+      </div>
+
+      <!-- Premium Tier -->
+      <div class="bg-white rounded-3xl border-2 border-primary p-8 shadow-xl relative flex flex-col">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full">Most Popular</span>
+        <div class="mb-6">
+          <p class="text-xs uppercase tracking-widest text-primary font-semibold mb-1">Nông dân Chuyên nghiệp</p>
+          <h3 class="text-2xl font-bold text-on-surface">$1.50<span class="text-base font-normal text-on-surface-variant">/month</span></h3>
+          <p class="text-sm text-on-surface-variant mt-1">For professional &amp; commercial farmers</p>
+        </div>
+        <ul class="space-y-3 text-sm flex-1 mb-8">
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant"><strong class="text-on-surface">Unlimited</strong> diagnoses</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Advanced analytics &amp; trends</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Seasonal crop calendar</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Market price alerts</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Multi-farm management (up to 5)</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Priority support</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Export reports (PDF/CSV)</span>
+          </li>
+        </ul>
+        <a href="index.html#waitlist" class="block text-center bg-primary text-white font-semibold py-3 rounded-xl hover:bg-primary-container active:scale-95 transition-all no-underline text-sm shadow-md">Start Free Trial</a>
+      </div>
+
+      <!-- Enterprise Tier -->
+      <div class="bg-white rounded-3xl border border-outline-variant/30 p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="mb-6">
+          <p class="text-xs uppercase tracking-widest text-on-surface-variant font-semibold mb-1">Đối tác</p>
+          <h3 class="text-2xl font-bold text-on-surface">Custom</h3>
+          <p class="text-sm text-on-surface-variant mt-1">For cooperatives, NGOs &amp; enterprises</p>
+        </div>
+        <ul class="space-y-3 text-sm flex-1 mb-8">
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Bulk diagnosis API</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Cooperative dashboard</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Custom model fine-tuning</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Data analytics feed</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">Dedicated account manager</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">SLA guarantee (99.9%)</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span class="text-on-surface-variant">White-label option</span>
+          </li>
+        </ul>
+        <a href="mailto:daohung@agrisense-ai.qidian-vp.com" class="block text-center bg-surface-container-high text-on-surface font-semibold py-3 rounded-xl hover:bg-surface-container-highest transition-all no-underline text-sm">Contact Sales</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 6. API PREVIEW SECTION -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-[#2f3033] text-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <div>
+        <p class="text-xs uppercase tracking-widest text-[#6ddd81] font-semibold mb-3">For B2B Partners</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Enterprise Diagnosis API</h2>
+        <p class="text-gray-400 leading-relaxed mb-6">Integrate AgriSense's crop diagnostic engine directly into your platform — cooperative management systems, agricultural marketplaces, government extension portals, or agri-fintech apps.</p>
+        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-[#6ddd81] text-lg">bolt</span>
+            Sub-500ms average response time
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-[#6ddd81] text-lg">security</span>
+            OAuth 2.0 authentication &amp; API key management
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-[#6ddd81] text-lg">code</span>
+            SDKs for Python, Node.js, and Java
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-[#6ddd81] text-lg">monitoring</span>
+            Real-time usage dashboard &amp; analytics
+          </li>
+        </ul>
+        <p class="text-xs text-gray-500 italic">Full API documentation available upon partnership approval.</p>
+      </div>
+
+      <div>
+        <!-- Request -->
+        <div class="mb-4">
+          <p class="text-[10px] uppercase tracking-widest text-gray-500 font-semibold mb-2">Request</p>
+          <div class="bg-gray-900 rounded-2xl p-5 font-mono text-xs leading-relaxed overflow-x-auto border border-gray-700">
+            <p class="text-gray-500 mb-2">POST /api/v1/diagnose</p>
+            <p class="text-gray-500 mb-2">Authorization: Bearer &lt;API_KEY&gt;</p>
+            <p class="text-gray-500 mb-3">Content-Type: application/json</p>
+<pre class="text-gray-300">{
+  <span class="text-[#6ddd81]">"image"</span>: <span class="text-tertiary-fixed">"data:image/jpeg;base64,/9j/4AAQ..."</span>,
+  <span class="text-[#6ddd81]">"location"</span>: {
+    <span class="text-[#6ddd81]">"lat"</span>: <span class="text-tertiary-fixed-dim">10.762622</span>,
+    <span class="text-[#6ddd81]">"lng"</span>: <span class="text-tertiary-fixed-dim">106.660172</span>
+  },
+  <span class="text-[#6ddd81]">"crop_type"</span>: <span class="text-tertiary-fixed">"rice"</span>,
+  <span class="text-[#6ddd81]">"language"</span>: <span class="text-tertiary-fixed">"vi"</span>
+}</pre>
+          </div>
+        </div>
+        <!-- Response -->
+        <div>
+          <p class="text-[10px] uppercase tracking-widest text-gray-500 font-semibold mb-2">Response <span class="text-[#6ddd81]">200 OK</span></p>
+          <div class="bg-gray-900 rounded-2xl p-5 font-mono text-xs leading-relaxed overflow-x-auto border border-gray-700">
+<pre class="text-gray-300">{
+  <span class="text-[#6ddd81]">"diagnosis"</span>: {
+    <span class="text-[#6ddd81]">"disease"</span>: <span class="text-tertiary-fixed">"Rice Blast (Pyricularia oryzae)"</span>,
+    <span class="text-[#6ddd81]">"confidence"</span>: <span class="text-tertiary-fixed-dim">0.94</span>,
+    <span class="text-[#6ddd81]">"severity"</span>: <span class="text-tertiary-fixed">"high"</span>
+  },
+  <span class="text-[#6ddd81]">"treatment"</span>: {
+    <span class="text-[#6ddd81]">"product"</span>: <span class="text-tertiary-fixed">"Tricyclazole 75% WP"</span>,
+    <span class="text-[#6ddd81]">"dosage"</span>: <span class="text-tertiary-fixed">"0.6g/L, spray 500L/ha"</span>,
+    <span class="text-[#6ddd81]">"est_cost_usd"</span>: <span class="text-tertiary-fixed-dim">1.80</span>
+  },
+  <span class="text-[#6ddd81]">"sources"</span>: [
+    <span class="text-tertiary-fixed">"IRRI Rice Knowledge Bank (2024)"</span>,
+    <span class="text-tertiary-fixed">"FAO Crop Protection Compendium"</span>
+  ]
+}</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 7. INTEGRATION & PLATFORM SECTION -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Integrations</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">Built on World-Class Infrastructure</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">AgriSense integrates with the platforms farmers already use and the cloud infrastructure trusted by enterprises worldwide.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+      <!-- Google Cloud -->
+      <div class="glass-card rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">cloud</span>
+          </div>
+          <h4 class="font-bold text-on-surface">Google Cloud</h4>
+        </div>
+        <ul class="space-y-1.5 text-xs text-on-surface-variant">
+          <li>• Gemini 2.0 Flash — multimodal AI engine</li>
+          <li>• Vertex AI — model training &amp; deployment</li>
+          <li>• Speech-to-Text v2 — dialect recognition</li>
+          <li>• Google Maps Platform — dealer locator</li>
+        </ul>
+      </div>
+
+      <!-- Firebase -->
+      <div class="glass-card rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-tertiary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary text-2xl">local_fire_department</span>
+          </div>
+          <h4 class="font-bold text-on-surface">Firebase</h4>
+        </div>
+        <ul class="space-y-1.5 text-xs text-on-surface-variant">
+          <li>• Firebase Auth — secure farmer accounts</li>
+          <li>• Cloud Firestore — real-time data sync</li>
+          <li>• Cloud Messaging — push notifications</li>
+          <li>• Firebase Analytics — usage insights</li>
+        </ul>
+      </div>
+
+      <!-- Messaging Platforms -->
+      <div class="glass-card rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary text-2xl">chat</span>
+          </div>
+          <h4 class="font-bold text-on-surface">Messaging Platforms</h4>
+        </div>
+        <ul class="space-y-1.5 text-xs text-on-surface-variant">
+          <li>• LINE Messenger — Thailand market</li>
+          <li>• Zalo — Vietnam market</li>
+          <li>• WhatsApp Business API — global reach</li>
+          <li>• SMS fallback — for feature phones</li>
+        </ul>
+      </div>
+
+      <!-- Agricultural Data -->
+      <div class="glass-card rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-2xl">agriculture</span>
+          </div>
+          <h4 class="font-bold text-on-surface">Commodity Exchanges</h4>
+        </div>
+        <ul class="space-y-1.5 text-xs text-on-surface-variant">
+          <li>• Vietnam Commodity Exchange (VNX)</li>
+          <li>• Agricultural Futures Exchange of Thailand</li>
+          <li>• Local cooperative price feeds</li>
+          <li>• FAO food price index integration</li>
+        </ul>
+      </div>
+
+      <!-- Government Services -->
+      <div class="glass-card rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-tertiary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary text-2xl">account_balance</span>
+          </div>
+          <h4 class="font-bold text-on-surface">Extension Services</h4>
+        </div>
+        <ul class="space-y-1.5 text-xs text-on-surface-variant">
+          <li>• Vietnam MARD pest alert database</li>
+          <li>• Thai Dept. of Agriculture advisory</li>
+          <li>• IRRI Rice Knowledge Bank</li>
+          <li>• FAO Crop Protection Compendium</li>
+        </ul>
+      </div>
+
+      <!-- AI & ML -->
+      <div class="glass-card rounded-2xl border border-outline-variant/20 p-6 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary text-2xl">psychology</span>
+          </div>
+          <h4 class="font-bold text-on-surface">AI &amp; Edge Computing</h4>
+        </div>
+        <ul class="space-y-1.5 text-xs text-on-surface-variant">
+          <li>• Google AI Edge — on-device inference</li>
+          <li>• TensorFlow Lite — optimized models</li>
+          <li>• MediaPipe — real-time image pipeline</li>
+          <li>• ONNX Runtime — cross-platform support</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 8. CTA SECTION -->
+<!-- ============================================================ -->
+<section class="py-24 px-8 bg-surface relative overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-primary/5 via-transparent to-tertiary-fixed/10"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(#006e2c10_1px,transparent_1px)] [background-size:20px_20px]"></div>
+
+  <div class="max-w-3xl mx-auto text-center relative z-10">
+    <span class="material-symbols-outlined text-6xl text-primary mb-6 block">rocket_launch</span>
+    <h2 class="text-3xl md:text-5xl font-bold text-on-surface mb-6">Ready to See AgriSense in Action?</h2>
+    <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl mx-auto">
+      Join our pilot program and experience how AI-powered diagnostics can transform crop health management for your farm or organization.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <a href="index.html#waitlist" class="inline-flex items-center gap-2 bg-[#006e2c] text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-[#34a853] active:scale-95 transition-all shadow-lg no-underline">
+        <span class="material-symbols-outlined">calendar_today</span>
+        Request Demo
+      </a>
+    </div>
+    <p class="text-sm text-on-surface-variant">
+      Partnership inquiries: <a href="mailto:daohung@agrisense-ai.qidian-vp.com" class="text-primary font-semibold hover:underline">daohung@agrisense-ai.qidian-vp.com</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#f4f3f7] dark:bg-gray-900 border-t border-[#bdcaba]/20">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
+    <div>
+      <a href="index.html" class="flex items-center gap-2 no-underline mb-2">
+        <img src="logo.png" alt="AgriSense AI Logo" class="h-8 w-8 object-contain"/>
+        <span class="text-xl font-bold text-[#006e2c] dark:text-[#34a853] font-['Lexend']">AgriSense AI</span>
+      </a>
+      <p class="font-['Lexend'] text-sm text-gray-500 dark:text-gray-400 max-w-xs leading-relaxed">
+        © 2026 AgriSense AI.<br/>Harvesting Intelligence for a Greener Planet.
+      </p>
+    </div>
+    <div class="flex flex-col gap-3 font-['Lexend'] text-sm">
+      <a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 no-underline" href="index.html#waitlist">Investor Relations</a>
+      <a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 no-underline" href="mailto:daohung@agrisense-ai.qidian-vp.com">Contact Us</a>
+      <a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 no-underline" href="team.html">Our Team</a>
+      <a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 no-underline" href="technology.html">Technology</a>
+      <a class="text-gray-600 dark:text-gray-400 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 no-underline" href="market.html">Market Analysis</a>
+    </div>
+    <div class="md:text-right">
+      <p class="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4 font-['Lexend']">Get in touch</p>
+      <a href="mailto:daohung@agrisense-ai.qidian-vp.com" class="text-[#006e2c] dark:text-[#34a853] font-medium font-['Lexend'] text-sm hover:underline no-underline">daohung@agrisense-ai.qidian-vp.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
