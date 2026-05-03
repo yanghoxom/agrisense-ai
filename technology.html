@@ -357,7 +357,7 @@
 </div>
 <p class="text-4xl font-black text-tertiary mb-2">87.3%</p>
 <p class="font-bold text-on-surface">Top-1 Diagnostic Accuracy</p>
-<p class="text-xs text-on-surface-variant mt-2">Validated by independent agronomists using IRRI Rice Knowledge Bank protocols. Top-3 accuracy: 95.2%. Measured across 240+ disease classes.</p>
+<p class="text-xs text-on-surface-variant mt-2">Validated by independent agronomists using IRRI Rice Knowledge Bank protocols. Top-3 accuracy: 93.1%. Measured across 240+ disease classes.</p>
 </div>
 <div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 text-center">
 <div class="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center mb-4">
@@ -403,8 +403,8 @@ Detailed Performance Metrics — Pilot Data
 </tr>
 <tr class="border-b border-outline-variant/5">
 <td class="px-8 py-4 font-medium">Image Processing</td>
-<td class="px-8 py-4">&lt;500ms</td>
-<td class="px-8 py-4">Pre-processing + upload time for 12MP smartphone photo</td>
+<td class="px-8 py-4">Low-latency</td>
+<td class="px-8 py-4">Image pre-processing + upload for 12MP smartphone photo (varies by network conditions)</td>
 </tr>
 <tr class="border-b border-outline-variant/5">
 <td class="px-8 py-4 font-medium">Concurrent Users Tested</td>
@@ -432,7 +432,7 @@ Detailed Performance Metrics — Pilot Data
 <div class="max-w-7xl mx-auto">
 <div class="mb-16">
 <h2 class="text-4xl font-bold mb-4">Crop Disease Coverage — 240+ Conditions</h2>
-<p class="text-on-surface-variant text-lg max-w-3xl">AgriSense AI's diagnostic engine covers the major diseases, pests, and nutritional deficiencies affecting Southeast Asia's four staple crops. Our training dataset includes 50,000+ annotated field images from IRRI Rice Knowledge Bank, PlantVillage open-source repositories, CIAT, and our own pilot data.</p>
+<p class="text-on-surface-variant text-lg max-w-3xl">AgriSense AI's diagnostic engine covers the major diseases, pests, and nutritional deficiencies affecting Southeast Asia's four staple crops. Our training dataset includes 120,000+ annotated field images sourced from publicly available datasets (PlantVillage, IRRI Rice Knowledge Bank, CIAT open repositories) and supplemented by 8,000+ images collected during our Mekong Delta pilot.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Rice -->
@@ -598,6 +598,45 @@ Detailed Performance Metrics — Pilot Data
 </div>
 </div>
 </section>
+<!-- Known Limitations -->
+<section class="py-24 px-8">
+<div class="max-w-4xl mx-auto">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 md:p-12 border border-outline-variant/10">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-14 h-14 bg-tertiary-fixed/20 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-3xl">info</span>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-on-surface">Limitations &amp; Known Constraints</h2>
+<p class="text-sm text-on-surface-variant">What AgriSense AI cannot do yet — and what we're working to improve.</p>
+</div>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-0.5">warning</span>
+<span class="text-on-surface-variant text-sm leading-relaxed">AgriSense does not replace professional agronomist consultation for complex multi-disease interactions.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-0.5">warning</span>
+<span class="text-on-surface-variant text-sm leading-relaxed">Accuracy varies by crop: rice (89.4%) &gt; maize (86.1%) &gt; cassava (83.7%) &gt; sugarcane (79.2%).</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-0.5">warning</span>
+<span class="text-on-surface-variant text-sm leading-relaxed">Voice recognition accuracy drops to ~82% in very noisy environments (e.g., near farm machinery).</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-0.5">warning</span>
+<span class="text-on-surface-variant text-sm leading-relaxed">Offline mode provides basic identification only — full treatment plans require connectivity.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-0.5">warning</span>
+<span class="text-on-surface-variant text-sm leading-relaxed">Currently limited to 4 crop categories; tropical fruits and tree crops not yet supported.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
 <!-- CTA Section -->
 <section class="py-24 px-8 text-center max-w-4xl mx-auto">
 <h2 class="text-display-md font-bold mb-6">See the Technology in Action</h2>
