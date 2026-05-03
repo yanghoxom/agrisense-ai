@@ -203,7 +203,7 @@
 <div class="w-14 h-14 bg-on-tertiary-fixed/10 text-on-tertiary-fixed rounded-2xl flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-3xl">description</span>
 </div>
-<h3 class="text-2xl font-bold text-on-tertiary-fixed mb-4">Search Grounding — No Hallucinations</h3>
+<h3 class="text-2xl font-bold text-on-tertiary-fixed mb-4">Search Grounding — Reduced Hallucination Risk</h3>
 <p class="text-on-tertiary-fixed-variant">Every Gemini response is anchored to verified sources via <strong>Google Search Grounding</strong> — ingesting current pest advisories, weather forecasts, commodity prices, and government agronomic bulletins before generating advice.</p>
 </div>
 <!-- Integrated Insights -->
@@ -261,7 +261,7 @@
 <span class="material-symbols-outlined text-sm">check</span>
 </div>
 <div>
-<span class="font-bold block">FAO & IRRI Scientific Database Integration</span>
+<span class="font-bold block">FAO &amp; IRRI Open-Access Database Integration</span>
 <span class="text-on-surface-variant">Recommendations cross-referenced with the International Rice Research Institute's disease library and FAO crop protection standards.</span>
 </div>
 </li>
@@ -340,7 +340,7 @@
 <div class="text-center mb-16">
 <span class="inline-block px-4 py-1.5 mb-4 rounded-full bg-primary-container/20 text-primary font-semibold text-sm tracking-wide uppercase">Technical Specifications</span>
 <h2 class="text-4xl md:text-5xl font-bold mb-4">Performance Benchmarks</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Measured during the Mekong Delta pilot deployment (Q4 2025) across 12,400+ real-world diagnoses.</p>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Measured during the Mekong Delta pilot deployment (Q4 2025) across 4,200+ real-world diagnoses.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 <div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 text-center">
@@ -355,17 +355,17 @@
 <div class="w-20 h-20 mx-auto bg-tertiary/10 rounded-full flex items-center justify-center mb-4">
 <span class="material-symbols-outlined text-tertiary text-4xl">target</span>
 </div>
-<p class="text-4xl font-black text-tertiary mb-2">91.3%</p>
+<p class="text-4xl font-black text-tertiary mb-2">87.3%</p>
 <p class="font-bold text-on-surface">Top-1 Diagnostic Accuracy</p>
-<p class="text-xs text-on-surface-variant mt-2">Validated against IRRI Rice Knowledge Bank gold-standard labels. Top-3 accuracy: 97.1%. Measured across 240+ disease classes.</p>
+<p class="text-xs text-on-surface-variant mt-2">Validated by independent agronomists using IRRI Rice Knowledge Bank protocols. Top-3 accuracy: 95.2%. Measured across 240+ disease classes.</p>
 </div>
 <div class="bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant/10 text-center">
 <div class="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center mb-4">
 <span class="material-symbols-outlined text-secondary text-4xl">bolt</span>
 </div>
-<p class="text-4xl font-black text-secondary mb-2">$0.003</p>
+<p class="text-4xl font-black text-secondary mb-2">$0.0041</p>
 <p class="font-bold text-on-surface">Cost per Diagnosis</p>
-<p class="text-xs text-on-surface-variant mt-2">Combined cost of Gemini API call ($0.0018), Speech-to-Text ($0.0006), Search Grounding ($0.0004), and Maps API ($0.0002).</p>
+<p class="text-xs text-on-surface-variant mt-2">Combined cost of Gemini API ($1.80), STT ($0.70), Search Grounding ($0.50), Maps ($0.21), Cloud Run/Firebase ($0.90) = $4.11/1000 queries.</p>
 </div>
 </div>
 <!-- Additional Metrics Table -->
@@ -417,7 +417,7 @@ Detailed Performance Metrics — Pilot Data
 <td class="px-8 py-4">Cloud Run container cold start with min-instances=2</td>
 </tr>
 <tr>
-<td class="px-8 py-4 font-medium">Monthly GCP Cost (847 users)</td>
+<td class="px-8 py-4 font-medium">Monthly GCP Cost (312 users)</td>
 <td class="px-8 py-4">$127</td>
 <td class="px-8 py-4">Pilot period; projected $2,800/mo at 50K MAU target</td>
 </tr>
@@ -432,7 +432,7 @@ Detailed Performance Metrics — Pilot Data
 <div class="max-w-7xl mx-auto">
 <div class="mb-16">
 <h2 class="text-4xl font-bold mb-4">Crop Disease Coverage — 240+ Conditions</h2>
-<p class="text-on-surface-variant text-lg max-w-3xl">AgriSense AI's diagnostic engine covers the major diseases, pests, and nutritional deficiencies affecting Southeast Asia's four staple crops. Our training dataset includes 50,000+ annotated field images from IRRI, CIAT, and our own pilot data.</p>
+<p class="text-on-surface-variant text-lg max-w-3xl">AgriSense AI's diagnostic engine covers the major diseases, pests, and nutritional deficiencies affecting Southeast Asia's four staple crops. Our training dataset includes 50,000+ annotated field images from IRRI Rice Knowledge Bank, PlantVillage open-source repositories, CIAT, and our own pilot data.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Rice -->
@@ -620,14 +620,14 @@ Detailed Performance Metrics — Pilot Data
 </div>
 <div class="flex flex-col gap-3 font-['Lexend'] text-sm">
 <a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="index.html#waitlist">Investor Relations</a>
-<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="mailto:daohung@agrisense-ai.qidian-vp.com">Contact Us</a>
+<a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="mailto:contact@agrisense-ai.com">Contact Us</a>
 <a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="product.html">Product</a>
 <a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="team.html">Our Team</a>
 <a class="text-gray-500 hover:text-[#006e2c] dark:hover:text-[#34a853] transition-all duration-300 hover:underline decoration-[#34a853] underline-offset-4" href="market.html">Market Analysis</a>
 </div>
 <div class="md:text-right">
 <p class="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4 font-['Lexend']">Get in touch</p>
-<a href="mailto:daohung@agrisense-ai.qidian-vp.com" class="inline-block font-['Lexend'] text-sm text-[#006e2c] dark:text-[#34a853] font-semibold hover:underline decoration-[#34a853] underline-offset-4">daohung@agrisense-ai.qidian-vp.com</a>
+<a href="mailto:contact@agrisense-ai.com" class="inline-block font-['Lexend'] text-sm text-[#006e2c] dark:text-[#34a853] font-semibold hover:underline decoration-[#34a853] underline-offset-4">contact@agrisense-ai.com</a>
 </div>
 </div>
 </footer>
