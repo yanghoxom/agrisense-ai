@@ -7,9 +7,9 @@ Make the public website clearly match the Amazon application company name while 
 ## Brand relationship
 
 - Product: AgriSense
-- Company: NhieuTruyen
-- Public statement: "AgriSense is a product of NhieuTruyen."
-- Contact: phungha@nhieutruyen.com
+- Company: lembem
+- Public statement: "AgriSense is a product of lembem."
+- Contact: phungha@lembem.com
 
 ## Changes
 
@@ -17,15 +17,15 @@ Update all five HTML pages:
 
 - Replace `Qidian VP` with `AgriSense`.
 - Remove the obsolete `QIDIAN` acronym expansion.
-- Show `AgriSense — by NhieuTruyen` in site navigation.
-- Add "AgriSense is a product of NhieuTruyen." to the home-page hero and every footer.
-- Replace every `founder@qidian-vp.com` address with `phungha@nhieutruyen.com`.
-- Update page titles and descriptions to include `AgriSense by NhieuTruyen`.
+- Show `AgriSense — by lembem` in site navigation.
+- Add "AgriSense is a product of lembem." to the home-page hero and every footer.
+- Replace every `founder@qidian-vp.com` address with `phungha@lembem.com`.
+- Update page titles and descriptions to include `AgriSense by lembem`.
 - Keep existing product claims, layout, navigation, and form behavior unchanged.
 
 Add two small pages:
 
-- Company page: identifies NhieuTruyen as AgriSense's owner, lists Ho Chi Minh City, Vietnam, and provides the company-domain contact email.
+- Company page: identifies lembem as AgriSense's owner, lists Ho Chi Minh City, Vietnam, and provides the company-domain contact email.
 - Privacy page: explains the name and email collected by the contact form, their purpose, retention, and contact route.
 
 Link both pages from every footer. Company identity must remain visible without relying on metadata or the domain name.
@@ -33,8 +33,8 @@ Link both pages from every footer. Company identity must remain visible without 
 ## Validation
 
 - No visible `Qidian VP`, `QIDIAN`, or `qidian-vp.com` references remain.
-- Every page visibly connects AgriSense to NhieuTruyen.
-- Every contact link uses `phungha@nhieutruyen.com`.
+- Every page visibly connects AgriSense to lembem.
+- Every contact link uses `phungha@lembem.com`.
 - Existing internal links and contact form continue working.
 - New Company and Privacy links resolve successfully.
 
